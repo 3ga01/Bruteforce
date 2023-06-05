@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 30px;
+  margin: 0;
   align-items: center;
 }
 
@@ -59,7 +59,7 @@ tr:nth-child(even) {
 }
 
 /* Responsive Styles */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   /* h1 {
         font-size: 20px;
     } */
