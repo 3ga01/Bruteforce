@@ -61,7 +61,7 @@ tr:nth-child(even) {
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
   h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
   input[type="text"] {
