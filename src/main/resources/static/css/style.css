@@ -1,61 +1,64 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
 h1 {
-  color: #333;
+    color: #333;
+    font-size: 24px;
 }
 
 form {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 label {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 input[type="text"] {
-  padding: 5px;
-  width: 100%;
-  max-width: 300px;
+    padding: 5px;
+    width: 300px;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 thead {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
-th,
-td {
-  padding: 10px;
-  text-align: left;
+th, td {
+    padding: 10px;
+    text-align: left;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 /* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 24px;
-  }
+    input[type="text"] {
+        width: 100%;
+    }
 
-  input[type="text"] {
-    max-width: none;
-  }
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
