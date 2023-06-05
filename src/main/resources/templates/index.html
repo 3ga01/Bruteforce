@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Brute Force Decryption</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+
+  </head>
+  <body>
+    <h1>Brute Force Decryption</h1>
+
+    <form th:action="@{/decrypt}" method="post">
+      <label for="ciphertext">Ciphertext:</label>
+      <input type="text" id="ciphertext" name="ciphertext" required /><br />
+
+      <button type="submit">Decrypt</button>
+    </form>
+
+    <h2>Decrypted Plaintext:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Shift</th>
+          <th>Plaintext</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="result : ${results}">
+          <td th:text="${result.shift}"></td>
+          <td th:text="${result.plaintext}"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
