@@ -20,6 +20,29 @@ input[type="text"] {
     width: 300px;
 }
 
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
 button {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -44,4 +67,5 @@ th, td {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
 }
