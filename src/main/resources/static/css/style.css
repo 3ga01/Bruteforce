@@ -52,6 +52,7 @@ th,
 td {
   padding: 10px;
   text-align: center;
+  font-size: 1.8rem;
 }
 
 tr:nth-child(even) {
